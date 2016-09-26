@@ -3,7 +3,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.cts.devops</groupId>
-	<artifactId>demomavenappxl</artifactId>
+	<artifactId>demomavenapp</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Demo Maven Webapp</name>
@@ -146,41 +146,7 @@
 
       			</plugins>
     		</pluginManagement>
-		<plugins>
-		<plugin>
-			<groupId>com.xebialabs.deployit</groupId>
-			<artifactId>maven-deployit-plugin</artifactId>
-			<version>3.8.0</version>
-			<extensions>true</extensions>
-			 
-			<executions>
-			<execution>
-			<id>deployit-plugin-test</id>
-			<phase>deploy</phase>
-			 
-			<goals>
-			<goal>import</goal>
-			</goals>
-		</execution>
-		</executions>
-		 
-		<configuration>
-		<serverAddress>10.223.71.69</serverAddress>
-		<username>admin</username>
-		<password>C0gnizant@1</password>
-		<environmentId>Environments/Demo</environmentId>
-		<deployable>
-		<name>DemoMavenAppXL</name>
-		<type></type>
-		<filename>demomavenxl.war</filename>
-		<location>C:\jenkins\workspace\DemoMavenApp-XLDeploy\target</location>
-		<scanPlaceholders>true</scanPlaceholders>
-		</deployable>
-		</configuration>
-		</plugin>
-		</plugins>
-
-		<finalName>demomavenxl</finalName>
+		<finalName>demomaven</finalName>
 	</build>
 </project>
 <!-- just Added a comment by priyanka - 4 - good jenkins and sonar , no rundeck-->
